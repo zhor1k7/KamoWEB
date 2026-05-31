@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KAMO – discover the best deals around you. Discounts in cafés, restaurants, beauty, sport and more – all in one app.">
+    <title>KAMO App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/KAMO_logo.svg" alt="KAMO logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="faq.html">FAQ</a>
+            <a href="partner.html" class="partner-btn">Become a Partner</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="badge">Your city deals in one app</span>
+            <h1>Discover the best offers around you with KAMO</h1>
+            <p>
+                Find discounts, partner places, and exclusive deals in cafés,
+                restaurants, beauty, sport, and more — all in one mobile app.
+            </p>
+
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/appstore.png" alt="Download on the App Store" class="store-img">
+                </a>
+                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+                    <img src="images/google.png" alt="Get it on Google Play" class="store-img">
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/kamo4.png" alt="App preview on phone">
+        </div>
+
+        <div class="hero-image">
+            <img src="images/search6.png" alt="App preview on phone">
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== PARTNERS ================== -->
+<section class="partners">
+    <h2 class="partners-title">Trusted by our partners</h2>
+
+    <div class="partners-slider">
+        <div class="partners-track">
+            <img src="images/starbucks.svg" alt="Starbucks">
+            <img src="images/kfc.svg" alt="KFC">
+            <img src="images/mcdonalds.svg" alt="McDonalds">
+            <img src="images/burgerking.svg" alt="Burger King">
+
+            <!-- Duplicated for infinite scroll effect -->
+            <img src="images/starbucks.svg" alt="Starbucks">
+            <img src="images/kfc.svg" alt="KFC">
+            <img src="images/mcdonalds.svg" alt="McDonalds">
+            <img src="images/burgerking.svg" alt="Burger King">
+        </div>
+    </div>
+</section>
+
+
+<!-- ================ HOW TO USE ================== -->
+<section class="how-to-use">
+    <div class="container">
+        <div class="section-header">
+            <h2>How to use the app</h2>
+            <p>Simple steps to start saving with KAMO</p>
+        </div>
+
+        <!-- Step-by-step slider -->
+        <div class="slider-wrapper">
+            <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+
+            <div class="slides" id="slidesContainer">
+                <div class="slide active">
+                    <img src="images/step1.png" alt="Step 1">
+                    <h3>1. Open the app</h3>
+                    <p>Browse categories and explore nearby partner offers.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images/step2.png" alt="Step 2">
+                    <h3>2. Choose a deal</h3>
+                    <p>Select the offer you want and check the details.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images/step3.png" alt="Step 3">
+                    <h3>3. Show it at the place</h3>
+                    <p>Use the discount directly at the partner location.</p>
+                </div>
+            </div>
+
+            <button class="slider-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================ VIDEO SECTION ============== -->
+<section class="video-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>See KAMO in action</h2>
+            <p>Watch how easy it is to save money every day</p>
+        </div>
+
+        <div class="video-wrapper">
+            <video id="kamo-video" controls poster="images/kamo4.png">
+                <source src="video/promo.mp4" type="video/mp4">
+            </video>
+
+            <!-- Custom video controls -->
+            <div class="video-controls">
+                <button id="playPauseBtn" class="video-btn">Play</button>
+                <button id="muteBtn" class="video-btn">Mute</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================ ALERT SECTION ============= -->
+<section class="alert-section">
+    <div class="container">
+
+        <!-- Web component <kamo-alert> – defined in script.js -->
+        <kamo-alert type="promo">
+            <img src="images/gift.png" alt="Promo icon" class="alert-icon">
+            <span>Limited offer: Download KAMO today and get 3 months of Premium free!</span>
+        </kamo-alert>
+
+        <kamo-alert type="info">
+            <img src="images/location.png" alt="Location icon" class="alert-icon">
+            <span>Now available in Prague, Brno, Bratislava, Ostrava, Plzeň and Košice.</span>
+        </kamo-alert>
+
+    </div>
+</section>
+
+
+<!-- ===================== FOOTER ================ -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div>
+            <h3>KAMO</h3>
+            <p>Your city deals in one app.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- =================== SCRIPTS ================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

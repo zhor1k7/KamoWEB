@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KAMO FAQ – answers to the most common questions about deals, accounts and partnerships.">
+    <title>FAQ – KAMO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/KAMO_logo.svg" alt="KAMO logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="partner.html" class="partner-btn">Become a Partner</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ==================== FAQ HERO ================== -->
+<section class="faq-hero">
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about KAMO</p>
+
+        <!-- Live search input – filtering handled in script.js (faq inline logic) -->
+        <div class="faq-search-wrap">
+            <input type="search" id="faqSearch" placeholder="Search questions…" aria-label="Search FAQ" autofocus>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== FAQ CONTENT =============== -->
+<section class="faq-section">
+    <div class="container">
+
+        <!-- Category tabs – filter accordion items by data-cat -->
+        <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
+            <button class="faq-tab active" data-cat="all"     role="tab">All</button>
+            <button class="faq-tab"        data-cat="general" role="tab">General</button>
+            <button class="faq-tab"        data-cat="deals"   role="tab">Deals</button>
+            <button class="faq-tab"        data-cat="account" role="tab">Account</button>
+            <button class="faq-tab"        data-cat="partner" role="tab">For Partners</button>
+        </div>
+
+        <!-- Accordion list -->
+        <div class="faq-list" id="faqList">
+
+            <!-- GENERAL -->
+            <div class="faq-item" data-cat="general">
+                <button class="faq-question" aria-expanded="false">
+                    What is KAMO?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    KAMO is a mobile app that connects users with exclusive discounts and deals at local businesses — cafés, restaurants, beauty salons, sports venues, and more. Available on iOS and Android.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="general">
+                <button class="faq-question" aria-expanded="false">
+                    Is KAMO free to use?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes! Downloading and using KAMO is completely free. We also offer a Premium subscription with exclusive deals and early access to limited offers.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="general">
+                <button class="faq-question" aria-expanded="false">
+                    Which cities is KAMO available in?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    KAMO is currently available in Prague, Brno, Bratislava, Ostrava, Plzeň, and Košice. We're expanding rapidly — new cities are announced every quarter.
+                </div>
+            </div>
+
+            <!-- DEALS -->
+            <div class="faq-item" data-cat="deals">
+                <button class="faq-question" aria-expanded="false">
+                    How do I use a deal?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Simply open the deal in the app, tap "Use offer", and show the screen to the staff at the partner location. No printing needed — it's 100% digital.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="deals">
+                <button class="faq-question" aria-expanded="false">
+                    Can I use the same deal multiple times?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Most deals have usage limits (e.g. once per week or once per visit). The app clearly shows how many times you can use each offer and when it resets.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="deals">
+                <button class="faq-question" aria-expanded="false">
+                    Do deals expire?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes, each deal has an expiry date shown on its detail page. We send push notifications before your favourited deals expire so you don't miss out.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="deals">
+                <button class="faq-question" aria-expanded="false">
+                    Are there deals for delivery or takeaway?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes! Some partners offer deals for both dine-in and takeaway. Filter by "Delivery" or "Takeaway" in the app to find relevant offers near you.
+                </div>
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="faq-item" data-cat="account">
+                <button class="faq-question" aria-expanded="false">
+                    How do I create an account?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Download the KAMO app, tap "Sign up", and register with your email or continue with Google/Apple. It takes under 60 seconds.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="account">
+                <button class="faq-question" aria-expanded="false">
+                    How do I delete my account?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Go to Settings → Privacy → Delete account. Your data will be permanently removed within 30 days in accordance with GDPR. If you need help, contact us at support@kamo.app.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="account">
+                <button class="faq-question" aria-expanded="false">
+                    What is KAMO Premium?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    KAMO Premium unlocks exclusive deals not available to free users, early access to limited-time offers, and ad-free browsing. First 3 months are free when you download during our launch offer.
+                </div>
+            </div>
+
+            <!-- PARTNER -->
+            <div class="faq-item" data-cat="partner">
+                <button class="faq-question" aria-expanded="false">
+                    How do I become a KAMO partner?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    Fill in the contact form on our <a href="partner.html" style="color:var(--blue);text-decoration:underline;">Become a Partner</a> page and our team will get back to you within 24 hours. No technical setup required on your side.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="partner">
+                <button class="faq-question" aria-expanded="false">
+                    Is there a fee to list my business on KAMO?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    There's no setup fee. We offer flexible monthly plans starting from a small commission on redeemed deals. See our partner pricing for full details.
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="partner">
+                <button class="faq-question" aria-expanded="false">
+                    How do I track how many customers used my deal?
+                    <span class="faq-arrow" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    The KAMO Partner Dashboard gives you real-time statistics on views, clicks, and redemptions. You can also export monthly reports as CSV.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Shown when no FAQ items match the search query -->
+        <p id="noResults" hidden>No questions match your search. Try different keywords.</p>
+
+    </div>
+</section>
+
+
+<!-- ====================== CTA ==================== -->
+<section class="faq-cta">
+    <div class="container">
+        <h2>Still have questions?</h2>
+        <p>Our team is happy to help. Reach out and we'll get back to you within one business day.</p>
+        <a href="partner.html#contact" class="faq-cta-btn">Contact us</a>
+    </div>
+</section>
+
+<!-- ================ OFFLINE BANNER =============== -->
+<div data-include="offline-banner"></div>
+
+
+<!-- ===================== FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div>
+            <h3>KAMO</h3>
+            <p>Your city deals in one app.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- =================== SCRIPTS ================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

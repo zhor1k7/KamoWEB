@@ -1,0 +1,200 @@
+/* ---- Partner page specific styles ---- */
+
+.partner-hero {
+    background: linear-gradient(135deg, #2F4F8F 0%, #1F3053 50%, #14213D 100%);
+    padding: 70px 0 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.partner-hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    animation: fadeSlideIn 0.8s ease both;
+}
+
+.partner-hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.85;
+    animation: fadeSlideIn 0.8s 0.2s ease both;
+}
+
+/* Benefits grid */
+
+.benefits-section {
+    padding: 70px 0;
+    background: var(--bg);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    text-align: center;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(31, 48, 83, 0.16);
+}
+
+.benefit-icon {
+    font-size: 38px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: var(--text-soft);
+    font-size: 15px;
+}
+
+/* Partner map */
+
+.partner-map-section {
+    padding: 60px 0;
+    background: var(--light-blue);
+}
+
+#partner-map {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.active-dot {
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+/* Geolocation */
+
+.geo-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#geoBtn {
+    background: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#geoBtn:hover {
+    background: var(--blue);
+    transform: translateY(-2px);
+}
+
+#geoInfo {
+    margin-top: 12px;
+    font-size: 15px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    min-height: 22px;
+}
+
+/* Contact section */
+
+.partner-contact {
+    padding: 70px 0;
+    background: var(--white);
+}
+
+.partner-form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.partner-form-info h2 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+    line-height: 1.15;
+}
+
+.partner-form-info p {
+    color: var(--text-soft);
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.partner-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.partner-stat {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.partner-stat-num {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    min-width: 80px;
+}
+
+.partner-stat-label {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.4;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .partner-form-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .partner-hero h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .partner-hero h1 {
+        font-size: 26px;
+    }
+
+    .partner-hero {
+        padding: 50px 0 40px;
+    }
+}
